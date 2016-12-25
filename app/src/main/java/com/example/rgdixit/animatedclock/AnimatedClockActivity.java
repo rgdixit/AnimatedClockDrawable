@@ -17,13 +17,9 @@ public class AnimatedClockActivity extends AppCompatActivity implements View.OnC
         setContentView(R.layout.activity_animated_clock);
         ImageView animatedClockView = (ImageView) findViewById(R.id.img_clock);
 
-        // Best Approach to use Animated Vector Drawable is through
-        // this forces Compat use in post lollipop devices which has fixes over AnimatedVectorDrawable
-
+        // Creating though compat library
         animatedClock = AnimatedVectorDrawableCompat.create(this, R.drawable.avd_clock_rotate);
-        if (animatedClock != null) {
-            animatedClockView.setImageDrawable(animatedClock);
-        }
+        animatedClockView.setImageDrawable(animatedClock);
 
         Button startStopAnimation = (Button) findViewById(R.id.start_animation);
         startStopAnimation.setOnClickListener(this);

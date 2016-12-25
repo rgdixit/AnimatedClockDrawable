@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:drawable="@drawable/vd_clock">
-  <target
-      android:name="@string/second_hand"
-      android:animation="@animator/rotate_second_hand" />
 
-  <target
-      android:name="@string/minute_hand"
-      android:animation="@animator/rotate_minute_hand" />
+  <!--&lt;!&ndash; rotates the group named second_hand of the clock vector&ndash;&gt;-->
+  <!--<target-->
+      <!--android:name="@string/second_hand"-->
+      <!--android:animation="@animator/rotate_second_hand" />-->
+
+  <!--&lt;!&ndash; rotates the group named minute_hand of the clock vector&ndash;&gt;-->
+  <!--<target-->
+      <!--android:name="@string/minute_hand"-->
+      <!--android:animation="@animator/rotate_minute_hand" />-->
+
+  <!-- animates strokeWidth of the outer ring-->
   <target
       android:name="@string/circle"
       android:animation="@animator/change_width" />
 
+  <!-- animates alpha of the outer ring-->
   <target
       android:name="@string/circle"
       android:animation="@animator/change_alpha" />

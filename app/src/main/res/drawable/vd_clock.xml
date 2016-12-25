@@ -12,13 +12,14 @@
       android:strokeColor="@android:color/darker_gray"
       android:strokeWidth=".1" />
 
-  <!-- minute-hand path-->
-  <!-- it is placed inside a group to take advantage of group level animations such as rotation-->
-  <!-- pivotX and pivotY assigns the pivotal point around which group animation would occur-->
+  <!-- minute-hand path's group-->
+  <!-- This path is placed inside a group to take advantage of group level animations such as rotation in this case-->
+  <!-- pivotX and pivotY assigns the pivotal point around which it has to rotate-->
   <group
       android:name="@string/minute_hand"
       android:pivotX="6"
       android:pivotY="6">
+    <!-- minute-hand path-->
     <path
         android:pathData="M 5.5,6 L 8.5,6"
         android:strokeColor="@android:color/darker_gray"
