@@ -8,4 +8,11 @@
   <target
       android:name="@string/minute_hand"
       android:animation="@animator/rotate_minute_hand" />
+  <target
+      android:name="@string/circle"
+      android:animation="@animator/change_width" />
+
+  <target
+      android:name="@string/circle"
+      android:animation="@animator/change_alpha" />
 </animated-vector>
